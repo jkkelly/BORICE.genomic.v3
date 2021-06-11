@@ -8,9 +8,13 @@ This program (Borice.Genomic.v3.py) includes a number of updates to the code in 
 
 SNP	0	A	G
 1	par	1.0	1.0	1.0
+
 1	off	0.0	1.0	0.0
+
 1	off	1.0	1.0	1.0
+
 1	off	1.0	0.0825776470588	0.0
+
 
 .
 .
