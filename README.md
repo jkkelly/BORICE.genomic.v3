@@ -30,6 +30,6 @@ If libraries are accessible, the programs should run using Python 2.7 in Windows
 
 python Borice.Genomic.v3.py
 
-The user needs to include two addtional files in the working directory: [name].genotypes.txt and the popfile.  The user needs to indentify these files by editing "Control.v3.txt".  The user can also specify design parameters in this file.  The particular example of Control.v3.txt contained here is set to run Borice on the genotypes in "Macrov2.genotypes.txt" using the population information in "macro.pops.v2.txt".
+The user needs to include two addtional files in the working directory: [name].genotypes.txt and the popfile.  The user needs to indentify these files by editing "Control.v3.txt".  The user can also specify design parameters in this file.  The particular example of Control.v3.txt contained here is set to run Borice on the genotypes in "Macrov2.genotypes.txt" using the popfile "macro.pops.v2.txt".
 
 
