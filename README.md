@@ -7,6 +7,7 @@ This program (Borice.Genomic.v3.py) includes a number of updates to the code in 
 4.  The v3 program takes a standardized input for the genotype data.  The data for each SNP is a listed sequentially in the [name].genotypes.txt file.  Here, we include "Macrov2.genotypes.txt" as an example.  The format is exactly repeated for each SNP in the dataset:   
 
 SNP	0	A	G
+
 1	par	1.0	1.0	1.0
 
 1	off	0.0	1.0	0.0
@@ -15,21 +16,20 @@ SNP	0	A	G
 
 1	off	1.0	0.0825776470588	0.0
 
-
 .
 .
 .
 
 The first line of a "snp block" is the SNP ID with alternative bases listed.  Next, each familiy is listed in sequence (family ID is the first column).  With each family, the maternal plant ("par" in second column) is reported first, followed by each offspring in that family ("off" in second column).  The genotype likelihoods are reported in columns 3-5 for RR, RA, and AA, respectively.  Individuals with missing data have likelihood values of 1.0 1.0 1.0.  Maternal individuals are always included even if they are not genotypes.  In this case, they always have 1.0 1.0 1.0.
 
-
-# v3: Output posterior density for Dxy for each pairwise contrast of populations
-
+5.  The v3 program provides an additional output for inter-population divergence (Dxy for each pairwise contrast of populations).
 
 
 Borice.Genomic.v3.py written in Python 2.7 (http://www.python.org/) and tested using the Linux operating system.  The program is dependent on SciPy.
 If libraries are accessible, the programs should run using Python 2.7 in Windows or Mac operating systems. The command line usages:
 
+python Borice.Genomic.v3.py
+
+The user needs to include two addtional files in the working directory: [name].genotypes.txt and the popfile.  The user needs to indentify these files by editing "Control.txt".  The user can also specify design parameters in this file.  The particular example of Control.txt contained here is set to run Borice on the genotypes in "Macrov2.genotypes.txt" using the population information in "macro.pops.v2.txt".
 
 
-Key parameters, such as names of input genotype file, are indentified in Control.txt..
