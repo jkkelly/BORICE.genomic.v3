@@ -38,13 +38,23 @@ The AYMMr.tar.gz is bundle containing the AYMMr.py SNP filtering program in addi
 python AYMMr.py GL.example.txt key.example.txt
 That run should produce an output file "AYMMr.scores.txt", a text file with the evaluation of each SNP in the input GL file.  The columns of the output: 
 scaffold
+
 SNP position
+
 Number mother-offspring pairs 
+
 P sub 1
+
 P sub 2
+
 Delta
+
 Number of (not mother)-offspring pairs 
+
 P sub 1 Not Mom
+
 P sub 2 Not Mom
+
 Delta Not Mom
+
 
