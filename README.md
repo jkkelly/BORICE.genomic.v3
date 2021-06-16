@@ -35,7 +35,9 @@ The user needs to include two addtional files in the working directory: [name].g
 ----------------
 
 The AYMMr.tar.gz is bundle containing the AYMMr.py SNP filtering program in addition to two sample input files.  The command line usage for these test inputs is:
+
 python AYMMr.py GL.example.txt key.example.txt
+
 That run should produce an output file "AYMMr.scores.txt", a text file with the evaluation of each SNP in the input GL file.  The columns of the output: 
 
 scaffold
