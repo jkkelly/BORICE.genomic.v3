@@ -66,7 +66,7 @@ The second processing script, locus.police.py, is contained in the bundle "locus
 
 python locus.police.py hardcall
 
-This should produce two output files: hardcall.impossibles.byMomOff.txt and hardcall.impossibles.bySNP.txt.  The SNP text file is a summary of impossible mother-offspring combinations per SNP.  Users can simply delete all such SNPs prior to running BORICE or adopt an alternative calling method for Genotype Likelihoods.  The second output enumerates the number of incompatibilities per mother-offspring pairing across all SNPs.  Particular pairings that yield many incompatibilities may incorrectly assigned as mother and offspring.
+This should produce two output files: hardcall.impossibles.byMomOff.txt and hardcall.impossibles.bySNP.txt.  The SNP text file is a summary of impossible mother-offspring combinations per SNP.  Users my choose to simply delete all SNPs that exhibit incompatibilities prior to running BORICE or adopt an alternative calling method for Genotype Likelihoods.  The second output enumerates the number of incompatibilities per mother-offspring pairing across all SNPs.  Particular pairings that yield many incompatibilities may incorrectly assigned as mother and offspring.
 
 
 
