@@ -26,10 +26,25 @@ The first line of a "snp block" is the SNP ID with alternative bases listed.  Ne
 
 
 Borice.Genomic.v3.py written in Python 2.7 (http://www.python.org/) and tested using the Linux operating system.  The program is dependent on SciPy.
-If libraries are accessible, the programs should run using Python 2.7 in Windows or Mac operating systems. The command line usages:
+If libraries are accessible, the programs should run using Python 2.7 in Windows or Mac operating systems. The command line usage is:
 
 python Borice.Genomic.v3.py
 
 The user needs to include two addtional files in the working directory: [name].genotypes.txt and the popfile.  The user needs to indentify these files by editing "Control.v3.txt".  The user can also specify design parameters in this file.  The particular example of Control.v3.txt contained here is set to run Borice on the genotypes in "Macrov2.genotypes.txt" using the popfile "macro.pops.v2.txt".
 
+----------------
+
+The AYMMr.tar.gz is bundle containing the AYMMr.py SNP filtering program in addition to two sample input files.  The command line usage for these test inputs is:
+python AYMMr.py GL.example.txt key.example.txt
+That run should produce an output file "AYMMr.scores.txt", a text file with the evaluation of each SNP in the input GL file.  The columns of the output: 
+scaffold
+SNP position
+Number mother-offspring pairs 
+P sub 1
+P sub 2
+Delta
+Number of (not mother)-offspring pairs 
+P sub 1 Not Mom
+P sub 2 Not Mom
+Delta Not Mom
 
