@@ -69,4 +69,13 @@ python locus.police.py hardcall
 This should produce two output files: hardcall.impossibles.byMomOff.txt and hardcall.impossibles.bySNP.txt.  The SNP text file is a summary of impossible mother-offspring combinations per SNP.  Users my choose to simply delete all SNPs that exhibit incompatibilities prior to running BORICE or adopt an alternative calling method for Genotype Likelihoods.  The second output enumerates the number of incompatibilities per mother-offspring pairing across all SNPs.  Particular pairings that yield many incompatibilities may incorrectly assigned as mother and offspring.
 
 
+--------------------------------------
+
+Population.test.tar.gz contains the program to test for differences in outcrossing rate among populations (Population.t.py) as well as a sample input and output file.  Usage to run on the sample data:
+
+python Population.t.py t.by.pop.txt
+
+The input file is made from the out/self posterior probabilities from BORICE.
+
+
 
