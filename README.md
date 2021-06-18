@@ -34,7 +34,7 @@ The user needs to include two addtional files in the working directory: [name].g
 
 ----------------
 
-The AYMMr.tar.gz is bundle containing the AYMMr.py SNP filtering program in addition to two sample input files.  The command line usage for these test inputs is:
+AYMMr.tar.gz is a bundle containing the AYMMr.py SNP filtering program and two sample input files.  The command line usage for these test inputs is:
 
 python AYMMr.py GL.example.txt key.example.txt
 
