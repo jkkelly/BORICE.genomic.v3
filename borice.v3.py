@@ -20,7 +20,7 @@ from numpy.random import beta
 import scipy.stats 
 import sys
 
-rep="chain1" # sys.argv[1]
+rep="run1" # sys.argv[1]
 
 MinCdxy = 4 # min called individuals at a SNP in population to count for Dxy
 
