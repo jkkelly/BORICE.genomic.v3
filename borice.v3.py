@@ -139,9 +139,9 @@ def fam1(Data,famID,snpID,delt,use1): # family j probability for one SNP
 
         if dg==1 and Famsize==1: # only a mom that has data (she produced no genotyped progeny)
             if use1==0:
-                return PriorMom[0]*Data[0][0] + PriorMom[1]*Data[0][1] + PriorMom[2]*Data[0][1] 
+                return PriorMom[0]*Data[0][0] + PriorMom[1]*Data[0][1] + PriorMom[2]*Data[0][2] 
             else:
-                return PriorMom[0]*Data[0][0],PriorMom[1]*Data[0][1],PriorMom[2]*Data[0][1] 
+                return PriorMom[0]*Data[0][0],PriorMom[1]*Data[0][1],PriorMom[2]*Data[0][2] 
 
         elif dg==1 and Famsize>1: 
 
